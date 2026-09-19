@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-// Next.js processes this stylesheet at build time; the project type checker
-// may not have a declaration for side-effect CSS imports.
-// @ts-expect-error: CSS is handled by Next.js, not TypeScript.
+
 import "./globals.css";
 import { LocaleProvider } from "@/lib/i18n";
 import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
