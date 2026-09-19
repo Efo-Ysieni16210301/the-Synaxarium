@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useLocale } from "@/lib/i18n";
 import type { FeastDay, Saint } from "@/types/feast";
-import FavoriteButton from "@/components/Favoritebutton";
+import FavoriteButton from "@/components/FavoriteButton";
 
 export default function SaintDetail({
   feast,
