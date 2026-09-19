@@ -1,0 +1,17 @@
+/*
+ * NOTE ON OFFLINE USE: this @import pulls the font from Google Fonts at
+ * runtime, which fails once the device is offline (see README "Fonts
+ * and true offline support"). For production, download the woff2 files
+ * for Noto Sans Ethiopic, put them in /public/fonts, and replace this
+ * import with local @font-face rules so the service worker can cache
+ * them like everything else.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-parchment text-ink;
+}

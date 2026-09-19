@@ -1,0 +1,36 @@
+{
+  "ethiopianMonth": 1,
+  "ethiopianDay": 1,
+  "ethiopianDateLabel": { "en": "Meskerem 1", "am": "መስከረም ፩" },
+  "occasion": { "en": "Ethiopian New Year (Enkutatash)", "am": "እንቁጣጣሽ" },
+  "saints": [
+    {
+      "id": "bartholomew-the-apostle",
+      "imageId": "bartholomew-the-apostle.jpg",
+      "name": { "en": "Saint Bartholomew", "am": "ቅዱስ በርተሎሜዎስ" },
+      "title": { "en": "Apostle", "am": "ሐዋርያ" },
+      "summary": {
+        "en": "One of the Twelve Apostles, remembered for carrying the Gospel to Armenia and beyond and for a martyrdom by drowning.",
+        "am": "ከዐሥራ ሁለቱ ሐዋርያት አንዱ ሲሆን ወንጌልን በአርማንያና በሌሎችም ሥፍራዎች ያስተማረ፣ በመጨረሻም በስደት ያረፈ ቅዱስ ነው።"
+      },
+      "story": {
+        "en": "REPLACE_WITH_FULL_STORY_TEXT_YOU_HAVE_RIGHTS_TO_PUBLISH",
+        "am": "REPLACE_WITH_FULL_STORY_TEXT_YOU_HAVE_RIGHTS_TO_PUBLISH"
+      }
+    },
+    {
+      "id": "job-the-righteous",
+      "imageId": "job-the-righteous.jpg",
+      "name": { "en": "Saint Job", "am": "ቅዱስ ኢዮብ" },
+      "title": { "en": "The Righteous", "am": "ጻድቅ" },
+      "summary": {
+        "en": "Known for enduring great suffering with patience; commemorated for his eventual restoration to health.",
+        "am": "ብዙ መከራን በትዕግስት ላለፈ ጻድቅ ሲሆን በዚህ ዕለት ጤናው መመለሱ ይታሰባል።"
+      },
+      "story": {
+        "en": "REPLACE_WITH_FULL_STORY_TEXT_YOU_HAVE_RIGHTS_TO_PUBLISH",
+        "am": "REPLACE_WITH_FULL_STORY_TEXT_YOU_HAVE_RIGHTS_TO_PUBLISH"
+      }
+    }
+  ]
+}

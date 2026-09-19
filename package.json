@@ -1,0 +1,31 @@
+{
+  "name": "ethio-saints-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bilingual (English/Amharic) offline-first app for Ethiopian/Eritrean Orthodox saints' feast days, packaged for web, desktop and Android.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "cap:sync": "npx cap sync",
+    "cap:android": "npx cap open android"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@types/node": "20.14.0",
+    "tailwindcss": "3.4.7",
+    "postcss": "8.4.40",
+    "autoprefixer": "10.4.19",
+    "@capacitor/core": "6.1.1",
+    "@capacitor/cli": "6.1.1",
+    "@capacitor/android": "6.1.1"
+  }
+}
