@@ -1,6 +1,6 @@
 "use client";
 
-import { useFavorites } from "../lib/Favorites";
+import { useFavorites } from "@/lib/favorites";
 import { useLocale } from "@/lib/i18n";
 
 export default function FavoriteButton({ saintId }: { saintId: string }) {

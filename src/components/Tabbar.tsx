@@ -33,7 +33,7 @@ export default function TabBar() {
   const isActive = (tab: (typeof TABS)[number]) => {
     if (tab.href === "/") return pathname === "/";
     return tab.matches.some(
-      (prefix) => pathname?.startsWith(prefix),
+      (prefix) => prefix !== "/" && pathname?.startsWith(prefix),
     );
   };
 

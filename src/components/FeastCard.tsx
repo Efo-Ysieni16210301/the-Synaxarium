@@ -55,13 +55,6 @@ export default function FeastCard({
   );
 }
 
-/**
- * Shows the saint's photo/icon if one was supplied (`saint.imageId`,
- * a filename under /public/saints/). Falls back to a plain initial
- * badge so the layout doesn't break for saints without an image yet -
- * most days will be missing one at first, since real content has to
- * be added file-by-file.
- */
 export function SaintThumbnail({
   saint,
 }: {
@@ -71,10 +64,6 @@ export function SaintThumbnail({
 
   if (saint.imageId) {
     return (
-      // Plain <img>, not next/image: this is a static export with no
-      // image-optimization server, and the browser's normal <img>
-      // caching is exactly what the service worker piggybacks on for
-      // offline use anyway.
       // eslint-disable-next-line @next/next/no-img-element
       <img
         src={`/saints/${saint.imageId}`}

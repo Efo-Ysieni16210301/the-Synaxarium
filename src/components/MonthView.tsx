@@ -1,14 +1,13 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useLocale } from '@/lib/i18n';
-import { getFeastByKey } from '@/data/feasts';
+import Link from "next/link";
+import { useLocale } from "@/lib/i18n";
+import { getFeastByKey } from "@/data/feasts";
 import {
   daysInEthiopianMonth,
   ethiopianMonths,
   feastKeyFor,
-} from '@/lib/ethiopianCalendar';
-import LanguageToggle from '@/components/LanguageToggle';
+} from "@/lib/ethiopianCalendar";
 
 export default function MonthView({ month }: { month: number }) {
   const { locale, t } = useLocale();
@@ -18,15 +17,17 @@ export default function MonthView({ month }: { month: number }) {
 
   return (
     <main className="mx-auto max-w-2xl px-4 py-8">
-      <header className="mb-6 flex items-center justify-between">
-        <Link href="/browse/" className="text-sm font-semibold text-ember underline">
-          &larr; {t('browse')}
+      <header className="mb-6">
+        <Link
+          href="/browse/"
+          className="text-sm font-semibold text-ember underline"
+        >
+          &larr; {t("browse")}
         </Link>
-        <LanguageToggle />
       </header>
 
       <h1 className="mb-4 text-2xl font-bold text-ember">
-        {monthInfo ? (locale === 'am' ? monthInfo.am : monthInfo.en) : month}
+        {monthInfo ? (locale === "am" ? monthInfo.am : monthInfo.en) : month}
       </h1>
 
       <div className="grid grid-cols-5 gap-2 sm:grid-cols-6">
@@ -38,10 +39,10 @@ export default function MonthView({ month }: { month: number }) {
               href={`/day/${month}/${day}/`}
               className={`rounded-lg border px-2 py-3 text-center text-sm font-semibold ${
                 hasEntry
-                  ? 'border-ember bg-ember/10 text-ember'
-                  : 'border-gold/30 bg-white/50 text-ink/50'
+                  ? "border-ember bg-ember/10 text-ember"
+                  : "border-gold/30 bg-white/50 text-ink/50"
               }`}
-              title={hasEntry ? t('hasEntry') : t('noEntry')}
+              title={hasEntry ? t("hasEntry") : t("noEntry")}
             >
               {day}
             </Link>
