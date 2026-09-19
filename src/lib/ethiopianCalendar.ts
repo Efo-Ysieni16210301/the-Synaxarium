@@ -23,13 +23,35 @@ export interface EthiopianDate {
 }
 
 const ETHIOPIAN_MONTH_NAMES_EN = [
-  'Meskerem', 'Tikimt', 'Hidar', 'Tahsas', 'Tir', 'Yekatit',
-  'Megabit', 'Miazia', 'Ginbot', 'Sene', 'Hamle', 'Nehase', 'Pagumē',
+  "Meskerem",
+  "Tikimt",
+  "Hidar",
+  "Tahsas",
+  "Tir",
+  "Yekatit",
+  "Megabit",
+  "Miazia",
+  "Ginbot",
+  "Sene",
+  "Hamle",
+  "Nehase",
+  "Pagumē",
 ];
 
 const ETHIOPIAN_MONTH_NAMES_AM = [
-  'መስከረም', 'ጥቅምት', 'ኅዳር', 'ታኅሣሥ', 'ጥር', 'የካቲት',
-  'መጋቢት', 'ሚያዝያ', 'ግንቦት', 'ሰኔ', 'ሐምሌ', 'ነሐሴ', 'ጳጉሜን',
+  "መስከረም",
+  "ጥቅምት",
+  "ኅዳር",
+  "ታኅሣሥ",
+  "ጥር",
+  "የካቲት",
+  "መጋቢት",
+  "ሚያዝያ",
+  "ግንቦት",
+  "ሰኔ",
+  "ሐምሌ",
+  "ነሐሴ",
+  "ጳጉሜን",
 ];
 
 function isGregorianLeapYear(year: number): boolean {
@@ -63,7 +85,9 @@ export function gregorianToEthiopian(gregorianDate: Date): EthiopianDate {
     newYearRef = ethiopianNewYearInGregorian(gYear - 1);
   }
 
-  const diffDays = Math.round((g.getTime() - newYearRef.getTime()) / 86_400_000);
+  const diffDays = Math.round(
+    (g.getTime() - newYearRef.getTime()) / 86_400_000,
+  );
   const month = Math.floor(diffDays / 30) + 1;
   const day = (diffDays % 30) + 1;
 
@@ -82,9 +106,10 @@ export function ethiopianToGregorian(ethiopianDate: EthiopianDate): Date {
 
 export function formatEthiopianDate(
   date: EthiopianDate,
-  locale: 'en' | 'am'
+  locale: "en" | "am",
 ): string {
-  const names = locale === 'am' ? ETHIOPIAN_MONTH_NAMES_AM : ETHIOPIAN_MONTH_NAMES_EN;
+  const names =
+    locale === "am" ? ETHIOPIAN_MONTH_NAMES_AM : ETHIOPIAN_MONTH_NAMES_EN;
   const monthName = names[date.month - 1] ?? String(date.month);
   return `${monthName} ${date.day}`;
 }
@@ -95,11 +120,15 @@ export function feastKeyFor(month: number, day: number): `${number}-${number}` {
 }
 
 /** All 13 Ethiopian months as { number, en, am } - for building selectors. */
-export function ethiopianMonths(): { number: number; en: string; am: string }[] {
+export function ethiopianMonths(): {
+  number: number;
+  en: string;
+  am: string;
+}[] {
   return ETHIOPIAN_MONTH_NAMES_EN.map((en, i) => ({
     number: i + 1,
     en,
-    am: ETHIOPIAN_MONTH_NAMES_AM[i],
+    am: ETHIOPIAN_MONTH_NAMES_AM[i] ?? en,
   }));
 }
 
