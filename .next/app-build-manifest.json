@@ -16,6 +16,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/day/[month]/[day]/page.js"
     ],
+    "/feast/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/feast/[slug]/page.js"
+    ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

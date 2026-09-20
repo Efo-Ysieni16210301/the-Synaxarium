@@ -2,10 +2,9 @@
   "ethiopianMonth": 1,
   "ethiopianDay": 9,
   "ethiopianDateLabel": { "en": "Meskerem 9", "am": "መስከረም ፱" },
-  "occasion": { "en": "Ethiopian New Year (Enkutatash)", "am": "እንቁጣጣሽ" },
   "saints": [
     {
-      "id": "Archangel-Michael",
+      "id": "archangel-michael-meskerem",
       "imageId": "archangel-michael.jpg",
       "name": { "en": "Archangel Michael", "am": "ቅዱስ ሚካኤል" },
       "title": { "en": "Archangel", "am": "ሊቀ መላእክት" },
@@ -32,15 +31,14 @@
         "am": "REPLACE_WITH_FULL_STORY_TEXT_YOU_HAVE_RIGHTS_TO_PUBLISH"
       }
     },
-
     {
-      "id": "job-the-righteous",
-      "imageId": "job-the-righteous.jpg",
-      "name": { "en": "Saint Job", "am": "ቅዱስ ኢዮብ" },
+      "id": "yasay-the-righteous",
+      "imageId": "yasay-the-righteous.jpg",
+      "name": { "en": "Saint Yasay", "am": "ቅዱስ ያሳይ" },
       "title": { "en": "The Righteous", "am": "ጻድቅ" },
       "summary": {
-        "en": "Known for enduring great suffering with patience; commemorated for his eventual restoration to health.",
-        "am": "ብዙ መከራን በትዕግስት ላለፈ ጻድቅ ሲሆን በዚህ ዕለት ጤናው መመለሱ ይታሰባል።"
+        "en": "The righteous king.",
+        "am": "ጻድቁ ንጉስ።"
       },
       "story": {
         "en": "REPLACE_WITH_FULL_STORY_TEXT_YOU_HAVE_RIGHTS_TO_PUBLISH",
