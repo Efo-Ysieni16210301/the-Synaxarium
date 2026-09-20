@@ -4,7 +4,9 @@
   "private": true,
   "description": "Bilingual (English/Amharic) offline-first app for Ethiopian/Eritrean Orthodox saints' feast days, packaged for web, desktop and Android.",
   "scripts": {
+    "predev": "node scripts/generate-feast-index.js",
     "dev": "next dev",
+    "prebuild": "node scripts/generate-feast-index.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
